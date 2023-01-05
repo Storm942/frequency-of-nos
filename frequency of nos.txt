@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int nos[5],i,frq=0,c; 
+    printf("Enter nos:\n");
+    for(i=0;i<5;i++){
+        scanf("%d",&nos[i]);
+    }
+    printf("Enter no whose frequencuy is to be found:\n");
+    scanf("%d",&c);
+    for(i=0;i<5;i++){
+    if(nos[i]==c)
+    {
+        frq++;
+    }
+    }
+    printf("\nFrequency of %d is %d",c,frq);
+ return 0;  
+}
